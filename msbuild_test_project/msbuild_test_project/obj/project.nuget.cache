@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "dgSpecHash": "tI/98xrzbtIbwVXjUIYaYK3SPC6vpNM3cLMdKcugkT9nd7J2FB7xA9faQ60o34GPycozmzOgbjwnLmRrKJ3HcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files\\Jenkins\\msbuild_project\\msbuild_test_project\\msbuild_test_project\\msbuild_test_project.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+}
