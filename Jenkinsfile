@@ -2,7 +2,7 @@ pipeline {
     agent { label 'master' }
    
 	environment {
-		registry = "MFADLI28/dotnetapp"
+		registry = "mibsandy/dotnetapp"
 		img = "$registry" + ":${env.BUILD_ID}"
 		registryCredential = 'docker-hub-login' 
     }	
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/MFADLI28/dotnetapp.git'
+                git branch: 'master-1', url: 'https://github.com/mibsandy/dotnetapp.git'
                 sh 'ls -la'
             }
         }
