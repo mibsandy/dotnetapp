@@ -2,7 +2,7 @@ pipeline {
     agent { label 'master' }
    
 	environment {
-		registry = "kss7/dotnetapp"
+		registry = "MFADLI28/dotnetapp"
 		img = "$registry" + ":${env.BUILD_ID}"
 		registryCredential = 'docker-hub-login' 
     }	
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'dotnetwebapp', url: 'https://github.com/kss7/CICDJenkins.git'
+                git branch: 'master', url: 'https://github.com/MFADLI28/dotnetapp.git'
                 sh 'ls -la'
             }
         }
